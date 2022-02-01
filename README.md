@@ -15,3 +15,17 @@ Important packages include:
 1. [requests](https://docs.python-requests.org/en/master/)
 2. [BeautifulSoup](https://www.crummy.com/software/BeautifulSoup/bs4/doc/)
 3. [sqlite3](https://docs.python.org/3/library/sqlite3.html)
+
+## Usage
+1. Clone repo
+2. To scrape to csv:
+  - Run `python3 scrape-to-csv.py`
+  - View output in preferred editor
+  - Verify output against `books-answer.csv`
+3. To scrape to db:
+  - Run `python3 scrape-to-db.py`
+  - View output in a db viewer that is compatible with SQLite or to view in cli:
+    - Open with `sqlite3 books.db`
+    - `.mode column .headers on`
+    - `.select * from reviews;`
+  - Verify output against with `books-answer.db`
